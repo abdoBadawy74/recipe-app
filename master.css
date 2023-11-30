@@ -1,23 +1,104 @@
-:root{
-    --primary-color:#595dae;
-    --sec-color:#000;
+:root {
+  --primary-color: #595dae;
+  --sec-color: #000;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-main{
-    display: flex;
-    justify-content: end;
+body {
+  font-family: monospace;
+}
+main {
+  display: flex;
+  justify-content: end;
 }
 .search-area {
-    position: fixed;
-    left: 0;
-    width: 40%;
-    background-color: var(--primary-color);
-    height: 100vh;
+  position: fixed;
+  left: 0;
+  width: 40%;
+  background-color: var(--primary-color);
+  height: 100vh;
 }
-.result-area{
-    width: 60%;
+.search-area div {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.search-area div h2 {
+  display: block;
+  width: 100%;
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+.search-input {
+  width: 90%;
+  height: 40px;
+  padding: 5px;
+  border: 0;
+  outline: 0;
+  color: var(--primary-color);
+}
+#search-btn {
+  cursor: pointer;
+  border: 0;
+}
+#search-btn i {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  display: block;
+  background-color: var(--sec-color);
+  line-height: 40px;
+  text-align: center;
+}
+.result-area {
+  width: 60%;
+  padding: 15px;
+}
+.result-area {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.result-area > div {
+  width: 49%;
+}
+.card {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.card-img img {
+  width: 100%;
+  /* border-top-right-radius: 20px;
+    border-top-left-radius: 200px; */
+}
+.card-info {
+  padding: 20px;
+  text-align: center;
+}
+.card-info a {
+  display: inline-block;
+  width: 210px;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 15px 0;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 15px 0;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+.card-info a:hover {
+  background-color: var(--sec-color);
 }
