@@ -80,8 +80,6 @@ main {
 }
 .card-img img {
   width: 100%;
-  /* border-top-right-radius: 20px;
-    border-top-left-radius: 200px; */
 }
 .card-info {
   padding: 20px;
@@ -101,4 +99,39 @@ main {
 }
 .card-info a:hover {
   background-color: var(--sec-color);
+}
+.showDetails{
+  /* display: none; */
+}
+.redipe-details {
+  position: fixed;
+  left: 0;
+  width: 45%;
+  background-color: var(--primary-color);
+  height: 100vh;
+  padding: 80px 30px;
+}
+.redipe-details i {
+  width: 30px;
+  height: 30px;
+  color: #000;
+  background-color: #ccc;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.redipe-details > *{
+  margin-bottom: 25px;
+  color: #fff;
+}
+.redipe-details h2{
+  font-size: 35px;
+}
+.redipe-details p{
+  font-size: 18px;
 }
