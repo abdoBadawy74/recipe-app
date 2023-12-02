@@ -45,6 +45,7 @@ main {
   border: 0;
   outline: 0;
   color: var(--primary-color);
+  font-size: 20px;
 }
 #search-btn {
   cursor: pointer;
@@ -101,7 +102,7 @@ main {
   background-color: var(--sec-color);
 }
 .showDetails{
-  /* display: none; */
+  display: none;
 }
 .redipe-details {
   position: fixed;
