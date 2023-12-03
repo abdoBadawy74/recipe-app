@@ -104,15 +104,15 @@ main {
 .showDetails{
   display: none;
 }
-.redipe-details {
+.recipe-details {
   position: fixed;
   left: 0;
   width: 45%;
   background-color: var(--primary-color);
-  height: 100vh;
-  padding: 80px 30px;
+  min-height: 100vh;
+  padding: 30px;
 }
-.redipe-details i {
+.recipe-details i {
   width: 30px;
   height: 30px;
   color: #000;
@@ -126,13 +126,13 @@ main {
   cursor: pointer;
   font-size: 20px;
 }
-.redipe-details > *{
-  margin-bottom: 25px;
+.recipe-details > *{
+  margin-bottom: 15px;
   color: #fff;
 }
-.redipe-details h2{
+.recipe-details h2{
   font-size: 35px;
 }
-.redipe-details p{
-  font-size: 18px;
+.recipe-details p{
+  font-size: 15px;
 }
